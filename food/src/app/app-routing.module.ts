@@ -4,7 +4,8 @@ import { SearchComponent } from './search/search.component';
 import { ProdottoComponent } from './prodotto/prodotto.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/search', pathMatch: 'full' },
+  { path: '',   redirectTo: '/prodotto/737628064502', pathMatch: 'full' },
+  //{ path: '',   redirectTo: '/search', pathMatch: 'full' },
   { path: 'search', component: SearchComponent },
   { path: 'prodotto/:id', component: ProdottoComponent }
   

@@ -30,11 +30,10 @@ export class ProdottoComponent {
       let productId = params.get('id') || ''; 
       console.log(productId); 
       this.obsProduct = this.chiedicibo.searchProduct(productId);
-      this.obsProduct.subscribe((data) => { this.results = data; console.log(this.results)});
+      this.obsProduct.subscribe((data) => { 
+        this.results = data; 
+        console.log(this.results);  
+      });
     }
-
-    back() : void
-    {
-      
-    }
+     
 }
