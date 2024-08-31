@@ -13,7 +13,13 @@ export class ChiediciboService {
     let obsFood = this.http.get(url);
     console.log(obsFood)
     return obsFood;
- //Ritorno un observable ai componenti che richiedono il servizio
+  }
+
+  searchProduct(id: string) {
+    const url = `https://world.openfoodfacts.org/api/v0/product/${id}`;
+    let obsProduct = this.http.get(url);
+    console.log(obsProduct);
+    return obsProduct;
   }
 
 }

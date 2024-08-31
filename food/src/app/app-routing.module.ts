@@ -6,7 +6,7 @@ import { ProdottoComponent } from './prodotto/prodotto.component';
 const routes: Routes = [
   { path: '',   redirectTo: '/search', pathMatch: 'full' },
   { path: 'search', component: SearchComponent },
-  { path: 'prodotto', component: ProdottoComponent }
+  { path: 'prodotto/:id', component: ProdottoComponent }
   
 ];
 
