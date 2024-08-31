@@ -1,4 +1,6 @@
 <div>
-  <input type="text">
-  <button>Invio</button>
+  <input type="text" #cibo>
+  <button (click)="submit(cibo)">Invio</button>
 </div>
+
+{{results | json}}
